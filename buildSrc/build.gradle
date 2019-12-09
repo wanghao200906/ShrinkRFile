@@ -1,0 +1,22 @@
+apply plugin: 'maven'
+apply plugin: 'groovy'
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation gradleApi()
+    implementation localGroovy()
+    implementation 'org.ow2.asm:asm:7.1'
+    implementation 'org.ow2.asm:asm-util:7.1'
+    implementation 'org.ow2.asm:asm-commons:7.1'
+    implementation 'com.android.tools.build:gradle:3.2.1'
+//    implementation 'com.android.tools.build:gradle:3.1.2'
+
+}
+
+
+repositories {
+    mavenCentral()
+    google()
+    jcenter()
+}
